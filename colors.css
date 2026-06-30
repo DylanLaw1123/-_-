@@ -57,9 +57,8 @@ section{border-top-color:var(--line);}
   background:rgba(200,16,46,0.03);
 }
 
-.back-link{color:var(--ink-soft);}
-.back-link:hover{color:var(--red);}
-.game-hero p{color:var(--ink-soft);}
+.game-actions a{color:var(--ink-soft);}
+.game-actions a:hover{color:var(--red);}
 
 .contact-sub{color:var(--ink-soft);}
 .contact-row{border-bottom-color:var(--line);}
