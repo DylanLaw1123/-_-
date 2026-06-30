@@ -113,6 +113,10 @@ h2{font-size:30px;font-weight:700;margin-bottom:24px;}
   border-radius:999px;
   font-size:14px;
 }
+.tag-link{
+  cursor:pointer;
+  transition:all 0.2s ease;
+}
 
 /* CONTACT */
 .contact h2{font-size:34px;}
