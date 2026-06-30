@@ -120,29 +120,16 @@ h2{font-size:30px;font-weight:700;margin-bottom:24px;}
   transition:all 0.2s ease;
 }
 
-/* GAME PAGE */
-.game-hero{
-  padding:100px 0 60px;
-}
-.game-hero h1{
-  font-size:44px;
-  margin-top:14px;
-}
-.game-hero p{
-  margin-top:18px;
-  font-size:17px;
-  max-width:560px;
-}
-.game-links{
-  margin-top:36px;
-  display:flex;
-  gap:16px;
+/* GAMES LIST */
+.game-row{
   flex-wrap:wrap;
+  gap:10px;
 }
-.back-link{
+.game-name{font-weight:600;}
+.game-actions{
+  display:flex;
+  gap:18px;
   font-size:14px;
-  display:inline-block;
-  margin-bottom:8px;
 }
 
 /* CONTACT */
