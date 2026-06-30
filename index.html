@@ -84,7 +84,7 @@
     <h2>日常爱好</h2>
     <div class="tags">
       <div class="tag">刷视频</div>
-      <div class="tag">玩游戏</div>
+      <a href="#games" class="tag tag-link">玩游戏</a>
       <a href="#contact" class="tag tag-link">聊天</a>
     </div>
   </div>
@@ -95,11 +95,51 @@
     <div class="section-label">05 游戏</div>
     <h2>在玩的游戏</h2>
     <div class="tags">
-      <div class="tag">光遇 Sky</div>
-      <div class="tag">PUBG</div>
+      <button type="button" class="tag tag-link" onclick="openGame('sky')">光遇 Sky</button>
+      <button type="button" class="tag tag-link" onclick="openGame('pubg')">PUBG</button>
     </div>
   </div>
 </section>
+
+<div class="overlay" id="gameOverlay" onclick="closeGame(event)">
+  <div class="modal">
+    <button type="button" class="modal-close" onclick="closeGame(event)">✕</button>
+    <h3 id="modalTitle"></h3>
+    <div class="modal-links">
+      <a id="modalOfficial" href="#" target="_blank" class="btn btn-primary">官方网址 ↗</a>
+      <a id="modalDownload" href="#" target="_blank" class="btn btn-ghost">下载链接 ↗</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  const games = {
+    sky: {
+      title: "光遇 Sky: Children of the Light",
+      official: "https://sky.thatgamecompany.com/",
+      download: "https://sky.thatgamecompany.com/download"
+    },
+    pubg: {
+      title: "PUBG: Battlegrounds",
+      official: "https://pubg.com/",
+      download: "https://www.pubgmobile.com/en/download/"
+    }
+  };
+
+  function openGame(key){
+    const g = games[key];
+    document.getElementById("modalTitle").textContent = g.title;
+    document.getElementById("modalOfficial").href = g.official;
+    document.getElementById("modalDownload").href = g.download;
+    document.getElementById("gameOverlay").classList.add("open");
+  }
+
+  function closeGame(e){
+    if(e.target.id === "gameOverlay" || e.target.classList.contains("modal-close")){
+      document.getElementById("gameOverlay").classList.remove("open");
+    }
+  }
+</script>
 
 <section id="contact" class="contact">
   <div class="wrap">
