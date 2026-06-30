@@ -51,6 +51,11 @@ section{border-top-color:var(--line);}
   border-color:var(--line);
   color:var(--ink-soft);
 }
+.tag-link:hover{
+  border-color:var(--red);
+  color:var(--red);
+  background:rgba(200,16,46,0.03);
+}
 
 .contact-sub{color:var(--ink-soft);}
 .contact-row{border-bottom-color:var(--line);}
