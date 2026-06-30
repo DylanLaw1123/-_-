@@ -8,7 +8,7 @@
 }
 
 body{
-  background:var(--paper);
+  background:#FFFFFF;
   color:var(--ink);
 }
 
@@ -59,6 +59,44 @@ section{border-top-color:var(--line);}
 
 .game-actions a{color:var(--ink-soft);}
 .game-actions a:hover{color:var(--red);}
+
+/* STRIPES */
+.stripe-white{background:#FFFFFF;}
+.stripe-red{
+  background:var(--red);
+  color:#fff;
+  border-top-color:var(--red);
+}
+.stripe-red .section-label{color:#FFD9DE;}
+.stripe-red h2{color:#fff;}
+.stripe-red .about-text,
+.stripe-red .contact-sub,
+.stripe-red .project-desc,
+.stripe-red .fact-label,
+.stripe-red .game-actions a,
+.stripe-red .tag,
+.stripe-red .contact-row span:first-child{color:rgba(255,255,255,0.8);}
+.stripe-red .fact-value,
+.stripe-red .project-title,
+.stripe-red .contact-row span:last-child,
+.stripe-red .game-name{color:#fff;}
+.stripe-red .facts{border-top-color:rgba(255,255,255,0.25);}
+.stripe-red .project,
+.stripe-red .contact-row{border-bottom-color:rgba(255,255,255,0.25);}
+.stripe-red .project:first-of-type{border-top-color:rgba(255,255,255,0.25);}
+.stripe-red .project:hover{background:rgba(255,255,255,0.06);}
+.stripe-red .tag{border-color:rgba(255,255,255,0.4);}
+.stripe-red .tag-link:hover{
+  border-color:#fff;
+  color:#fff;
+  background:rgba(255,255,255,0.1);
+}
+.stripe-red .project-tag{color:#fff;border-color:rgba(255,255,255,0.5);}
+.stripe-red .project-title .arrow{color:#fff;}
+.stripe-red .game-actions a:hover{color:#fff;}
+.stripe-red .contact-row:hover span:last-child{color:#FFD9DE;}
+.stripe-red.contact .btn-ghost{border-color:rgba(255,255,255,0.6);color:#fff;}
+.stripe-red.contact .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,0.1);}
 
 .contact-sub{color:var(--ink-soft);}
 .contact-row{border-bottom-color:var(--line);}
