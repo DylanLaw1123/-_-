@@ -57,23 +57,9 @@ section{border-top-color:var(--line);}
   background:rgba(200,16,46,0.03);
 }
 
-.overlay{
-  background:rgba(26,26,26,0.45);
-}
-.modal{
-  background:var(--paper);
-  border:1px solid var(--line);
-}
-.modal-close{
-  background:var(--paper);
-  border:1px solid var(--line);
-  color:var(--ink-soft);
-}
-.modal-close:hover{
-  color:var(--red);
-  border-color:var(--red);
-}
-.modal h3{color:var(--ink);}
+.back-link{color:var(--ink-soft);}
+.back-link:hover{color:var(--red);}
+.game-hero p{color:var(--ink-soft);}
 
 .contact-sub{color:var(--ink-soft);}
 .contact-row{border-bottom-color:var(--line);}
